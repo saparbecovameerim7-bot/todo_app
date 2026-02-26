@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+    
+      .container {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 16px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+    
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+    
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+    
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+      }
+    
+      .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        margin: 8px;
+        border-radius: 30px;
+        background: #ff9800;
+        transition: 0.3s ease;
+      }
+    
+      .btn:hover {
+        background: #ffc107;
+        transform: translateY(-2px);
+      }
+    
+      .link {
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+    
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+  <h1></h1>
+  <p></p>
+  <a class="btn" href="{% url 'todo' %}">Todo</a>
+  <a href="{% url 'home' %}">Главная</a>
+  
+</body>
+</html>

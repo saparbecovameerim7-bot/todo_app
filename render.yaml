@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: todoapp
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gonicorn todo.wsgi"
+    envVars:
+      - key: PAYTHON_VERSION
+        value: 3.11.9
